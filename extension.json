@@ -1,0 +1,38 @@
+{
+	"name": "CSSTooltip",
+	"author": "Spazz",
+	"version": "1.0.0",
+	"url": "https://www.antkeeping.wiki",
+	"description": "Simple CSS based tooltip",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"CSSTooltip": "CSSTooltip.class.php"
+	},
+	"ExtensionMessagesFiles": {
+		"CSSTooltip": "CSSTooltip.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"CSSTooltip::onParserSetup"
+		],
+		"BeforePageDisplay": [
+			"CSSTooltip::CSSTooltipOnBeforePageDisplay"
+		]
+	},
+	"ResourceModules": {
+		"ext.CSSTooltip.styles": {
+			"styles": "CSSTooltip.css",
+			"position": "top",
+			"targets": [
+				"mobile",
+				"desktop"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "CSSTooltip"
+	},
+	"manifest_version": 1
+}

@@ -1,10 +1,10 @@
 {
 	"name": "CSSTooltip",
-	"author": "Spazz",
+	"author": "Jeremy Zimmerman (StopSpazzing)",
 	"version": "1.0.0",
 	"url": "https://www.antkeeping.wiki",
-	"description": "Simple CSS based tooltip",
-	"license-name": "GPL-2.0+",
+	"description": "Simple CSS based tooltip for mediawiki. Requires bootstrap's css tooltip.",
+	"license-name": "MIT",
 	"type": "parserhook",
 	"AutoloadClasses": {
 		"CSSTooltip": "CSSTooltip.class.php"
